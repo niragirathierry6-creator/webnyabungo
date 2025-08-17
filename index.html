@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITE WEB NYABUNGO HOTEL</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="slider">
+    <div class="slide active" style="background-image: url('Nyabungo_picture/abackground.JPG');"></div>
+    <div class="slide" style="background-image: url('Nyabungo_picture/bbackground.JPG');"></div>
+    <div class="slide" style="background-image: url('Nyabungo_picture/dbackground.JPG');"></div>
+  </div>
+
+  <div class="index">
+    <center><h1>BIENVENUE A NYABUNGO HOTEL RESTAURANT</h1></center>
+
+    <img src="Nyabungo_picture/logo_nyabungo.gif" width="80" height="80" style="float: left;">
+
+    <p style="text-align: center;">
+      Nyabungo est un établissement chaleureux et moderne, situé à Bujumbura, Mutanga Nord. Il accueille voyageurs, familles ou professionnels, avec des services pour rendre chaque séjour agréable.
+    </p>
+
+    <center>
+      <h2>Nos services :</h2>
+      <div class="services">
+        <a href="bar.html"><button>Service Bar</button></a>
+        <a href="restaurant.html"><button>Service Restaurant</button></a>
+        <a href="hotel.html"><button>Service Hôtel</button></a>
+      </div>
+    </center>
+  </div>
+
+  <div class="footer">
+    <h5>Clique ici pour votre message</h5>
+    <a href="https://wa.me/+25777778395" target="_blank">
+      <i class="fa-brands fa-whatsapp fa-2x"></i>
+    </a>
+  </div>
+
+
+<script>
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 3000); // change chaque 4 secondes
+</script>
+
+
+
+
+</body>
+</html>
+

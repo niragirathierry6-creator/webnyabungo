@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+h1
+{
+	font-weight: bold;
+	position: center;
+	color: orange;
+}
+h3 {
+  color: orange;
+  text-shadow: 
+     -1px -1px 0 black,
+      1px -1px 0 black,
+     -1px  1px 0 black,
+      1px  1px 0 black;
+}
+
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-position: center;
+	background-size: contain;
+
+}
+
+#bar
+{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 10px;
+	background-color: transparent;
+	border: 2px solid orange;
+	backdrop-filter: blur(10px);
+}
+
+#index
+{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px solid green;
+	backdrop-filter: blur(10px);
+
+}
+
+@media screen and (max-width:1499px) {
+	#body{
+		width: 90%;
+	}
+}
+
+
+#restaurant
+{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px solid green;
+	backdrop-filter: blur(10px);
+}
+
+#hotel
+{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 10px solid white;
+	backdrop-filter: blur(5px);
+}
+
+
+.images
+{
+	display: flex;
+	animation-duration: 50s;
+	animation-name: mesimages;
+	animation-iteration-count:infinite;
+	position: top;
+
+}
+
+@keyframes mesimages{
+	0%{
+		transform: translateX(0);
+	}
+	16%{
+		transform: translateX(-640px);
+	}
+	32%{
+		transform: translateX(-1280px);
+	}
+	48%{
+		transform: translateX(-1920px);
+	}
+	64%{
+		transform: translateX(-2560px);
+	}
+	80%{
+		transform: translateX(-3200px);
+	}
+	96%{
+		transform: translateX(0);
+	}
+
+}
+
+#caroussel
+{
+	width: 700px;
+	height: 100px;
+	background-color: grey;
+	margin:0 auto;
+	border-radius: 20px;
+}
+
+#defilementbar
+{
+	width: 640px;
+	overflow: auto;
+	border: 2px solid orange;
+}
+
+}
+#defilementbar
+{
+	width: 640px;
+	overflow: auto;
+	border: 2px solid orange;
+}
+
+#defilementrestaurant
+{
+	width: 640px;
+	overflow: auto;
+	border: 2px solid orange;
+}
+#defilementhotel
+{
+	width: 640px;
+	overflow: auto;
+	border: 2px solid orange;
+}
+ul li
+
+{
+	list-style-type: none;
+}
+
+iframe{
+	width: 50%;
+	border-radius: 10px;
+	box-shadow: 0 0  10px rgba(0.0.0.);
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left:    85%;
+  transform: translateX(-80%);
+  text-align: center;
+  background-color:green;
+  border: 5px solid white;
+  border-radius: 80px;
+  color: #fff;
+  padding: 2px 50;
+  width: 30%;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+
+}
+
+
+.index {
+	width: 700px;
+	height: 100px;
+	margin:0 auto;
+	background-color: transparent;
+	border: 2px solid white;
+	backdrop-filter: blur(100px);
+	border-radius: 20px;
+	
+}
+
+.index p {
+
+	font-size: 1.3em;
+
+
+}
+
+@media screen and (max-width: 1499px){
+	.index{
+		width: 90%px;
+				}
+
+}
+
+
+@media screen and (max-width: 700px){
+	.index{
+		height: 30%;
+		}
+
+}
+
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
